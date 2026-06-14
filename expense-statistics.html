@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expense-statistics.css">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="expense-statistics.js" defer></script>
+</head>
+<body>
+
+    <div class="app-container">
+
+        
+        <div class="header">
+
+            <div class="navigation">
+                <a  href="main.html" id="home-btn">🏠 Home</a>
+            </div>
+
+            <h1>Statistics</h1>
+
+        </div>
+
+       
+        <div class="filter-section">
+
+            <div class="filter-container">
+
+                <button class="filter-btn active" id="day-btn">Day</button>
+
+                <button class="filter-btn" id="week-btn"> Week  </button>
+
+                <button class="filter-btn" id="month-btn">  Month  </button>
+
+                <button class="filter-btn" id="year-btn">   Year  </button>
+
+            </div><br><br>
+
+            <div class="selected-date">
+
+                <button id="previous-date"> <  </button>
+
+                <span id="current-period"> Today, 25 May 2025 </span>
+
+                <button id="next-date">     > </button>
+
+            </div>
+
+        </div>
+
+        <div class="total-expense-card">
+
+            <h2>Total Expense  💵</h2>
+
+            <span id="total-expense">   ₹0.00   </span>
+
+        </div>
+
+       
+       <div class="chart-section">
+
+    <h2>Expense Distribution</h2>
+
+    <div class="chart-wrapper">
+
+        <!-- Left Side Pie Chart -->
+        <div id="chart-container">
+
+            <canvas id="expenseChart"></canvas>
+
+        </div>
+
+        <!-- Right Side Percentages -->
+        <div class="percentage-section">
+
+            <h3>Category Share</h3>
+
+            <ul id="percentage-list">
+
+                <!-- JavaScript will add items here -->
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+       
+        <div class="category-breakdown">
+
+            <h2>Category Breakdown</h2>
+
+            <ul id="category-list">
+
+                <li>
+                    <span>🍴 Food</span>
+                    <span id = "totalfood">₹0.00</span>
+                </li>
+
+                <li>
+                    <span>⛽ Petrol</span>
+                    <span id = "totalpetrol">₹0.00</span>
+                </li>
+
+                <li>
+                    <span>🛍️ Shopping</span>
+                    <span id = "totalshopping">₹0.00</span>
+                </li>
+
+                <li>
+                    <span>🛒 Groceries</span>
+                    <span id = "totalgroceries">₹0.00</span>
+                </li>
+
+                <li>
+                    <span>✈️ Travel</span>
+                    <span id = "totaltravel">₹0.00</span>
+                </li>
+
+                <li>
+                    <span>🏠 Rent</span>
+                    <span  id = "totalrent">₹0.00</span>
+                </li>
+
+                <li>
+                    <span>🎬 Entertainment</span>
+                    <span id = "totalentertainment">₹0.00</span>
+                </li>
+
+                <li>
+                    <span>🏥 Health</span>
+                    <span id = "totalhealth">₹0.00</span>
+                </li>
+
+                <li>
+                    <span>🎓 Education</span>
+                    <span id = "totaleducation">₹0.00</span>
+                </li>
+                <li>
+                    <span>📱 Subscriptions</span>
+                    <span id = "totalsubscription">₹0.00</span>
+                </li>
+                <li>
+                    <span>💳 EMI</span>
+                    <span id = "totalemi">₹0.00</span>
+                </li>
+                <li>
+                    <span>… Other</span>
+                    <span id = "totalother">₹0.00</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

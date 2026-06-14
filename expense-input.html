@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expense-input.css">
+    <script src="expense-input.js" defer></script>
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <div class="header">
+
+            <div class="navigation">
+                <a  href="main.html" id="home">🏠 Home</a>
+            </div>
+
+            <div class="selected-category">
+                <span id="category-icon">🍴</span>
+                <p id="category-name">Food</p>
+            </div>
+
+        </div>
+
+        
+        <div class="input-fields">
+
+            <h2>Add Expense</h2>
+
+            <label for="item">Item Name</label>
+            <input
+                type="text" id="item" name="item "placeholder="Enter item name">
+
+            <br><br>
+
+            <label for="amount">Amount (₹)</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" >
+
+            <br><br>
+
+            <label for="expense-date">Date</label>
+            <input type="date"  id="expense-date" name="expense-date" >
+
+
+            <br><br>
+
+            <button id="add-expense"> Add Expense  </button>
+
+        </div>
+
+        
+        <div class="expense-list-section">
+
+            <h2>Today's Expenses</h2>
+
+            <ul id="expense-list">
+
+
+              
+                
+            </ul>
+
+        </div>
+
+        <!-- Category Total -->
+        <div class="category-total">
+
+            <h2>Category Total <span id="total-expense">
+                ₹0.00
+            </span> </h2>
+
+           
+
+        </div>
+
+    </div>
+
+</body>
+</html>

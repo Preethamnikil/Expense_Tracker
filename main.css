@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    overflow-x: hidden;
+    
+   min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #eef2ff 0%,
+        #dbeafe 30%,
+        #f3e8ff 70%,
+        #fce7f3 100%
+    );
+}
+
+.App-Container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    text-align: center;
+
+    padding:  20px;
+
+    margin: 12px;
+
+    border-radius: 20px;
+
+    background:
+    linear-gradient( 135deg,   #667eea, #764ba2);
+
+    color: white;
+
+    box-shadow:
+        0 15px 30px rgba(102,126,234,0.3);
+} 
+
+.header h1{
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.header span{
+    font-size: 16px;
+
+    color: rgba(255,255,255,0.9);
+
+    font-weight: 500;
+}
+.categories-text{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    padding-top: -20px;
+}
+.category{
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(10px);
+    
+
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 15px;
+
+    padding: 12px;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    font-family: Arial, sans-serif;
+    color: #333;
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+.category p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.category span {
+    display: block;
+    margin-top: 5px;
+    font-size: 25px;
+    color: #666;
+}
+#food {
+    background: rgba(248,177,149,0.6);
+}   
+#groceries{
+    background: rgba(242,197,114,0.6);
+}
+
+#travel{
+    background: rgba(168,218,220,0.6);
+}
+
+#rent{
+    background: rgba(209,232,255,0.6);
+}
+
+#entertainment{
+    background: rgba(255,204,203,0.6);
+}
+
+#health{
+    background: rgba(181,232,212,0.6);
+}
+
+#education{
+    background: rgba(230,215,255,0.6);
+}
+
+#shopping{
+    background: rgba(255,217,102,0.6);
+}
+
+#petrol{
+    background: rgba(255,153,102,0.6);
+}
+
+#subscriptions{
+    background: rgba(192,224,255,0.6);
+}
+
+#emi{
+    background: rgba(255,204,203,0.6);
+}
+
+#other{
+    background: rgba(240,240,240,0.6);
+}
+.todays-expenses{
+    margin:20px 10px;
+    padding:20px;
+
+    background: rgba(224,247,250,0.6);
+
+    backdrop-filter: blur(10px);
+    
+
+    border-radius:15px;
+
+    box-shadow:    0 8px 20px rgba(0,0,0,0.08);
+}
+.todays-expenses h3{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.todays-expenses span{
+    margin: 10px 0 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+}
+.footer{
+    text-align:center;
+    padding:20px;
+   .header{
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    color:white;
+}
+    border-radius:20px;
+    box-shadow:
+    0 15px 30px rgba(102,126,234,0.3);
+
+    
+    }
+.statistics-button a{
+    left:30px;
+    top:20px;
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    color:white;
+    border:none; 
+    border-radius:10px;
+    padding:10px 20px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s ease;
+    text-decoration: none;
+}
+
+
+.statistics-button a:hover{
+    transform: translateY(-3px);
+    box-shadow:
+        0 15px 30px rgba(102,126,234,0.4);
+}
+
+.category:hover{
+    transform: translateY(-5px);
+    box-shadow:  0 12px 25px rgba(0,0,0,0.15);
+}
+body{
+    background: linear-gradient(  135deg,  #f8f9fa,  #e3f2fd,  #fce4ec );
+
+    min-height:100vh;
+}
+

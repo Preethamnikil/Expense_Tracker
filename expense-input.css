@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #eef2ff 0%,
+        #dbeafe 30%,
+        #f3e8ff 70%,
+        #fce7f3 100%
+    );
+}
+
+
+
+.header{
+    text-align:center;
+    padding:20px;
+}
+
+.header a{
+    position:absolute;
+    left:30px;
+    top:20px;
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    color:white;
+    border:none; 
+    border-radius:10px;
+    padding:10px 20px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s ease;
+    text-decoration: none;
+}
+
+.header a:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 20px rgba(102,126,234,0.35);
+}
+
+
+
+.selected-category{
+    display:inline-flex;
+
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    padding:15px 25px;
+
+    background:rgba(248,177,149,0.75);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:30px;
+    font-weight:700;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.10);
+}
+
+.selected-category p{
+    margin-top:5px;
+}
+
+
+
+.input-fields{
+    margin:20px 30px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.80);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.10);
+}
+
+.input-fields h2{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.input-fields label{
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:17px;
+    font-weight:600;
+}
+
+.input-fields input{
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:25px;
+
+    border:1px solid #dcdcdc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    background:white;
+
+    transition:0.3s ease;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.05);
+}
+
+.input-fields input:focus{
+    outline:none;
+
+    border-color:#667eea;
+
+    box-shadow:
+    0 0 0 4px rgba(102,126,234,0.15);
+}
+
+.input-fields button{
+    width:100%;
+
+    padding:15px;
+
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.input-fields button:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 20px rgba(102,126,234,0.30);
+}
+
+
+.expense-list-section{
+    margin:20px 30px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.80);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.10);
+}
+
+.expense-list-section h2{
+    margin-bottom:15px;
+
+    font-size:30px;
+}
+
+.expense-list-section ul{
+    list-style:none;
+}
+
+.expense-list-section li{
+    display:flex;
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid #eee;
+
+    font-size:18px;
+}
+
+/* TOTAL CARD */
+
+.category-total{
+    margin:20px 30px;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(102,126,234,0.15),
+        rgba(118,75,162,0.15)
+    );
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.10);
+}
+
+.category-total h2{
+    font-size:32px;
+
+    color:#333;
+}
+
